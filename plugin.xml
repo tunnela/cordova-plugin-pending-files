@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-pending-files" version="1.0.0">
+    <name>Pending Files</name>
+    <description>Restores selected files on Android when app reloads.</description>
+    <license>MIT</license>
+    <keywords>cordova,file,pending</keywords>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="PendingFiles">
+                <param name="android-package" value="la.tunne.pendingfiles.PendingFiles" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/la/tunne/pendingfiles/PendingFiles.java" target-dir="src/la/tunne/pendingfiles" />
+        <source-file src="src/android/la/tunne/pendingfiles/PendingFilesWebChromeClient.java" target-dir="src/la/tunne/pendingfiles" />
+    </platform>
+</plugin>

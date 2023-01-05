@@ -1,0 +1,10 @@
+{
+  "name": "cordova-plugin-pending-files",
+  "version": "1.0.0",
+  "description": "Restores selected files on Android when app reloads.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lauri Tunnela <lauri@tunne.la>",
+  "license": "MIT"
+}
